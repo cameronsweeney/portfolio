@@ -1,0 +1,74 @@
+/* global variables */
+
+:root {
+    --measure-1: 1rem;
+    --measure-2: 1.6rem;
+    --measure-3: 2.56rem;
+    --measure-4: 4.096rem;
+    
+    --color-bg: #FFE8D6;
+    --color-text: black;
+    --color-header: #6B705C;
+    --color-text-lt: white;
+    --color-accent: #F4B860;
+}
+
+/* global styling */
+
+body {
+    margin: var(--measure-1);
+    font-family: "Merriweather Sans", sans-serif;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+}
+
+a {
+    color: var(--color-text);
+    text-decoration: underline;
+}
+
+a:hover {
+    color: var(--color-accent);
+    transition: all 0.3s ease;
+}
+
+/* styling the header */
+
+.header_bar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: space-between;
+    align-items: center; /* vertical centering */
+    
+    background-color: var(--color-header);
+}
+
+.header_bar h1 {
+    margin: var(--measure-2);
+    font-size: var(--measure-4);
+    
+    flex-basis: 3;
+    flex-grow: 999;
+}
+
+.header_bar a {
+    margin-right: var(--measure-2); 
+    flex-basis: 1;
+    flex-grow: 1;
+}
+
+/* page article */
+
+article {
+    margin-left: 8ch;
+}
+
+/* styling the footer */
+
+.footer_bar {
+    margin-top: var(--measure-3);
+    padding: var(--measure-1);
+    background-color: var(--color-header);
+}
