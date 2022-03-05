@@ -114,7 +114,7 @@ article h2 {
 
 .footer_bar {
     background: var(--color-header);
-    color: var(--color-text);
+    color: var(--color-header-text);
     
     padding-left: var(--measure-3);
     padding-bottom: var(--measure-half);
