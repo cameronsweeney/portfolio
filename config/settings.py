@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     
     'accounts',
     'portfolio',
+    'tree_editor',
 ]
 
 MIDDLEWARE = [

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Visual JSON Tree Editor</title>
+    <link type="text/css" href="tree.css" rel="stylesheet" />
+
+    <!-- https://fonts.google.com/specimen/Merriweather+Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="react-root"></div>
+
+    <!-- Load React.js -->
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    
+    <!-- Load Redux -->
+    <script src="https://unpkg.com/redux@latest/dist/redux.min.js"></script>
+
+    <!-- Load react-redux -->
+    <script src="https://unpkg.com/react-redux@7.2.6/dist/react-redux.js"></script>
+
+    <!-- JSX in-browser transpiler -->
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    
+    <!-- Load my React app -->
+    <script type="text/babel" src="tree.js"></script>
+
+</body>
+
+</html>

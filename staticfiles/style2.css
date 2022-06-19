@@ -1,0 +1,32 @@
+/***********************************
+*** declare global CSS variables ***
+***********************************/
+
+:root {
+    --measure-half: 0.625rem;
+    
+    --measure-1: 1rem;
+    --measure-2: 1.6rem;
+    --measure-3: 2.56rem;
+    --measure-4: 4.096rem;
+    
+    --color-bg: #AAC0B2;
+    --color-text: black;
+    
+    --color-header: #0F6C95;
+    --color-header-text: white;
+    
+    --color-table-odd: #AAC0B2;
+    --color-table-even: #AAC0B2;
+}
+
+/**************************
+*** some global styling ***
+**************************/
+
+body {
+    font-family: "Lato", sans-serif;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    margin: 0;
+}

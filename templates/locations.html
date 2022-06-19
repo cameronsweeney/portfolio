@@ -1,0 +1,143 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<h1>Kanto</h1>
+{% endblock title %}
+
+
+{% block content %}
+<div class="location_title">
+    <h1>Power Plant</h1>
+
+    <img src="/static/FL_Power_Plant.png"/>
+
+    <p>The Power Plant is a small dungeon just below Route 10. In addition to random wild encounters while walking inside, the player can find <a href="#">Zapdos</a> hiding in the deepest corner and several <a href="#">Voltorb</a> and <a href="#">Electrode</a> disguised as Poké Balls.</p>
+</div>
+
+<div class="location_section">
+    <h2>Random encounters</h2>
+
+    <div class="encounters_grid">
+    
+        <div class="table_header">
+            <div class="grid_0_img">Icon</div>
+            <div class="grid_0_name">Pokémon</div>
+            <div class="grid_0_how">Method</div>
+            <div class="grid_0_cond">Conditions</div>
+            <div class="grid_0_lvl">Level</div>
+            <div class="grid_0_rate">Rarity</div>        
+        </div>
+    
+        <div class="pkmn_1">
+            <div class="grid_1_img"><img src="/static/red-blue/100.png"/></div>
+            <div class="grid_1_name">Voltorb</div>
+            <div class="grid_1_how">grass</div>
+            <div class="grid_1_cond">----------</div>
+            <div class="grid_1_lvl">21</div>
+            <div class="grid_1_rate">20%</div>
+        </div>
+     
+        <div class="pkmn_2">
+            <div class="grid_2_img"><img src="/static/red-blue/81.png"/></div>
+            <div class="grid_2_name">Magnemite</div>
+            <div class="grid_2_how">grass</div>
+            <div class="grid_2_cond">----------</div>
+            <div class="grid_2_lvl">21</div>
+            <div class="grid_2_rate">20%</div>
+        </div>
+        
+        <div class="pkmn_3">
+            <div class="grid_3_img"><img src="/static/red-blue/25.png"/></div>
+            <div class="grid_3_name">Pikachu</div>
+            <div class="grid_3_how">grass</div>
+            <div class="grid_3_cond">----------</div>
+            <div class="grid_3_lvl">20</div>
+            <div class="grid_3_rate">15%</div>
+        </div>
+        
+        <div class="pkmn_4">
+            <div class="grid_4_img"><img src="/static/red-blue/25.png"/></div>
+            <div class="grid_4_name">Pikachu</div>
+            <div class="grid_4_how">grass</div>
+            <div class="grid_4_cond">----------</div>
+            <div class="grid_4_lvl">24</div>
+            <div class="grid_4_rate">10%</div>
+        </div>
+        
+        <div class="pkmn_5">
+            <div class="grid_5_img"><img src="/static/red-blue/81.png"/></div>
+            <div class="grid_5_name">Magnemite</div>
+            <div class="grid_5_how">grass</div>
+            <div class="grid_5_cond">----------</div>
+            <div class="grid_5_lvl">23</div>
+            <div class="grid_5_rate">10%</div>
+        </div>
+        
+        <div class="pkmn_6">
+            <div class="grid_6_img"><img src="/static/red-blue/100.png"/></div>
+            <div class="grid_6_name">Voltorb</div>
+            <div class="grid_6_how">grass</div>
+            <div class="grid_6_cond">----------</div>
+            <div class="grid_6_lvl">23</div>
+            <div class="grid_6_rate">10%</div>
+        </div>
+        
+        <div class="pkmn_7">
+            <div class="grid_7_img"><img src="/static/red-blue/82.png"/></div>
+            <div class="grid_7_name">Magneton</div>
+            <div class="grid_7_how">grass</div>
+            <div class="grid_7_cond">----------</div>
+            <div class="grid_7_lvl">32</div>
+            <div class="grid_7_rate">5%</div>
+        </div>
+        
+        <div class="pkmn_8">
+            <div class="grid_8_img"><img src="/static/red-blue/82.png"/></div>
+            <div class="grid_8_name">Magneton</div>
+            <div class="grid_8_how">grass</div>
+            <div class="grid_8_cond">----------</div>
+            <div class="grid_8_lvl">35</div>
+            <div class="grid_8_rate">5%</div>
+        </div>
+        
+        <div class="pkmn_9">
+            <div class="grid_9_img"><img src="/static/red-blue/125.png"/></div>
+            <div class="grid_9_name">Electabuzz</div>
+            <div class="grid_9_how">grass</div>
+            <div class="grid_9_cond">----------</div>
+            <div class="grid_9_lvl">33</div>
+            <div class="grid_9_rate">4%</div>
+        </div>
+        
+        <div class="pkmn_10">
+            <div class="grid_10_img"><img src="/static/red-blue/125.png"/></div>
+            <div class="grid_10_name">Electabuzz</div>
+            <div class="grid_10_how">grass</div>
+            <div class="grid_10_cond">----------</div>
+            <div class="grid_10_lvl">36</div>
+            <div class="grid_10_rate">1%</div>
+        </div>
+    
+        <div class="table_footer"> </div>
+    
+    </div> <!-- end encounter grid -->
+</div> <!-- end random encounter section -->
+    
+<div class="location_section">
+    <h2>Fixed encounters</h2>
+    
+    <!-- create standard wild Pokémon HTML that gives level & moveset-->
+    <h3>Zapdos</h3>
+    
+    <img src="/static/zapdos-ow.png" alt="Player has found Zapdos" />
+    
+    <p>Zapdos is located in the upper left corner of the map. You will have to go the long way through most of the Power Plant to make it there, but there is a one-way exit left of Zapdos. It will bring you to the side of the building outside, letting you skip any wild encounters on the way back. Zapdos appears at Lv. 50 with the moves <a class="MoveLink">ThunderShock</a> and <a class="MoveLink">Drill Peck</a>.</p>
+    
+    <h3>Voltorb, Electrode</h3>
+    
+    <img src="/static/powerplant_rby.png" alt="Encountering a Voltorb in Pokémon Red." />
+    
+    <p>Voltorb will appear in random walking encounters, but there are also many Voltorb and Electrode disguised as items/Poké Balls in the overworld. There are six Voltorb and two Electrode (refer to the map for exact locations).</p>
+
+</div>
+{% endblock content%}
