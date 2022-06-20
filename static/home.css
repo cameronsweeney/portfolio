@@ -69,13 +69,13 @@ h1 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 #welcome {
     flex: 0 1 30rem;
     margin: var(--measure-3);
-    padding: var(--measure-2) var(--measure-4) var(--measure-2) var(--measure-2);
+    padding: var(--measure-half);
 
     display: flex;
     flex-direction: column;
@@ -87,8 +87,9 @@ h1 {
     max-width: 35rem;
     font-size: var(--measure-2);
     margin: 0;
-    padding: var(--measure-2);
+    padding: var(--measure-half);
 }
+
 
 #links {
     flex: 0 1 40%;
@@ -104,6 +105,8 @@ h1 {
     position: relative;
     margin: var(--measure-1);
     display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 #links div div {
