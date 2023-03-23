@@ -12,9 +12,14 @@
     --measure-5: 6.5536rem;
     
     --color-bg: white;
-    --color-text: #3A2818;
+    --color-text: black;
+
+    --color-main-1: #C14991;
+    --color-main-2: #319177;
     --color-header: #3EB489;
     --color-shadow: #481935;
+
+    --color-main-p: #CB67A3;
 }
 
 /**************************
@@ -22,19 +27,22 @@
 **************************/
 
 html {
-    height: 100%;
+    min-height: 100%;
     width: 100%;
+
+    overflow: scroll;
 }
 
 body {
     min-height: 100%;
-    width: auto;
-    background: linear-gradient(135deg, #B87BA0 0 50%, #3EB489 50% 100%) no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+    width: 100%;
+
+    overflow: scroll;
+
+    background: linear-gradient(135deg, var(--color-main-1) 0 50%, var(--color-main-2) 50% 100%) no-repeat;
     margin: 0;
 
-    font-family: 'Anek Latin', sans-serif;
+    font-family: 'Barlow Semi Condensed', sans-serif;
     color: var(--color-text);
 }
 
@@ -44,6 +52,7 @@ a {
 
 img {
     max-width: 100%;
+    object-fit: contain;
 }
 
 /*************************************/
@@ -69,12 +78,12 @@ h1 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 #welcome {
     flex: 0 1 30rem;
-    margin: var(--measure-3);
+    margin: var(--measure-1);
     padding: var(--measure-half);
 
     display: flex;
@@ -85,6 +94,7 @@ h1 {
 
 #welcome p {
     max-width: 35rem;
+    background-color: var(--color-main-p);
     font-size: var(--measure-2);
     margin: 0;
     padding: var(--measure-half);
@@ -97,13 +107,16 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+}
 
-    padding-left: var(--measure-3);
+#intro::after {
+    content: '';
+    flex: 0 1 5%; 
 }
 
 #links > div {
     position: relative;
-    margin: var(--measure-1);
+    margin: 0 var(--measure-1) var(--measure-1) var(--measure-1);
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -120,7 +133,7 @@ h1 {
 
     padding: var(--measure-half);
 
-    box-shadow: var(--measure-half) var(--measure-half) var(--color-shadow);
+    box-shadow: var(--measure-half) var(--measure-half) var(--color-text);
 
     
 }
@@ -144,7 +157,7 @@ h1 {
     transform: scale(1);
     transform-origin: top left;
     transition: transform .4s ease-out;
-    background: linear-gradient(135deg, #B87BA0 0 50%, #3EB489 50% 100%);
+    background: linear-gradient(135deg, var(--color-main-1) 0 50%, var(--color-header) 50% 100%);
     overflow: hidden;
     z-index: -1;
 }
@@ -176,5 +189,16 @@ div::before {
 
 ****************/
 
+#welcome div {
+    background-color: var(--color-main-p);
+    box-shadow: var(--measure-half) var(--measure-half) var(--color-text);
 
+    padding-bottom: var(--measure-1)
+}
 
+#welcome p {
+    max-width: 35rem;
+    font-size: var(--measure-2);
+    padding: var(--measure-half);
+    margin: 0;
+}

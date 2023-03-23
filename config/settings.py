@@ -24,7 +24,7 @@ SECRET_KEY = env.str("SECRET_KEY")
 
 DEBUG = env.bool("DEBUG", default=False)
 
-ALLOWED_HOSTS = ['.herokuapp.com', 'localhost', '127.0.0.1', '.sweeney.cam', 'sweeney.cam', '.damn.cam', 'damn.cam']
+ALLOWED_HOSTS = env.list("ALLOWED_HOSTS", default=['.herokuapp.com', 'localhost', '127.0.0.1', '.sweeney.cam', 'sweeney.cam', '.damn.cam', 'damn.cam'])
 
 
 # Application definition

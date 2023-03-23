@@ -1,7 +1,38 @@
-{% extends 'base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
 
-{% block content %}
-<h1>About Me</h1>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cameron Sweeney</title>
+    <link href="{% static 'home.css' %}" rel="stylesheet" type="text/css" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Latin&family=Barlow+Semi+Condensed&display=swap" rel="stylesheet"> 
+</head>
 
-<p>Website in progress. If you somehow actually managed to find your way here, check back in a while when it's done.</p>
-{% endblock content %}
+<body>
+<article>
+<h1>hello, i'm cameron.</h1>
+
+<div id="intro">
+  <div id="welcome">
+    <div>
+      <p>Welcome to my website! My name is Cameron Sweeney, and I'm a full stack developer and educator based in New York City.</p>
+      <p>I build websites and apps with Python, JavaScript, and more. I also tutor math, test prep, language, and science.</p>
+      <p>Website currently under construction... Check back soon!</p>
+    </div>
+  </div>
+
+  <div id="links">
+    <div><div><a href="{% url 'about' %}"><span>about&nbsp;me</span></a></div></div>
+    <div><div><a href="/learn"><span>student login</span></a></div></div>
+  </div>
+</div>
+
+</article>
+</body>
+</html>
